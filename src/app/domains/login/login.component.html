@@ -1,0 +1,42 @@
+<!-- src/app/login.component.html -->
+
+<div class="login-container">
+
+  <body class=" bg-gradient-to-r from-black via-orange-900 to-black ...">
+    <div class="font-[sans-serif]">
+      <div class="min-h-screen flex flex-col items-center justify-center">
+        <div
+          class="grid md:grid-cols-2 items-center gap-4 max-md:gap-8 max-w-6xl max-md:max-w-lg w-full p-4 m-4 shadow-[0_2px_10px_-3px_rgba(,81,237,0.3)] rounded-md">
+          <div class="md:max-w-md w-full px-4 py-4">
+            <form (submit)="login()">
+              <div class="mb-8">
+                <h3 class="text-white text-3xl font-extrabold">Iniciar sesión</h3>
+                <p class="text-white text-sm mt-4 leading-relaxed">Inicie sesión en su cuenta y explore un mundo de posibilidades. Tu viaje comienza aquí.</p>
+              </div>
+              <div>
+                <label class="text-white text-sm block mb-2 " for="email">Email</label>
+                <input  placeholder="Enter email" class="w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none" type="email" id="email" [(ngModel)]="email" name="email" required>
+
+              </div>
+              <div>
+                <label class="text-white text-sm block mb-2" for="password">Password</label>
+                <input  placeholder="Enter password" class="w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none" type="password" id="password" [(ngModel)]="password" name="password" required>
+              </div>
+              <div class="mt-12 flex justify-center items-center">
+                <button class="w-full text-white text-sm border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none" type="submit">Login</button>
+              </div>
+
+
+            </form>
+          </div>
+
+          <div class="md:h-full bg-gradient-to-r from-black via-black ... rounded-xl lg:p-12 p-8">
+            <img
+              src="https://us.123rf.com/450wm/asmati/asmati1702/asmati170211595/73034967-signo-de-tenedor-y-cuchillo-icono-de-naranja-sobre-fondo-negro-viejo-monitor-de-f%C3%B3sforo-crt.jpg"
+              class="w-full h-full object-contain" alt="login-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</div>
